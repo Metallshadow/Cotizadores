@@ -34,7 +34,13 @@ header {
 }
 
 .logo img {
-    max-width: 80px;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.company-info {
+    text-align: right;
 }
 
 .company-info h1 {
@@ -69,6 +75,14 @@ main {
     flex-basis: 48%;
 }
 
+.client-info {
+    text-align: left;
+}
+
+.quotation-info {
+    text-align: right;
+}
+
 .client-info h3, .quotation-info h3 {
     font-size: 14px;
     color: #003366;
@@ -81,49 +95,44 @@ main {
 }
 
 /* Tabla de productos */
+.products-title {
+    color: #003366;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .product-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 11px;
+}
+
 .product-table th {
     background-color: #003366;
     color: white;
-    text-align: left;
-    padding: 8px;
-    font-size: 12px;
-}
-
-.product-table td {
-    padding: 8px;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 11px;
 }
 
 .product-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Totales */
-.totals {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.totals p {
-    margin: 3px 0;
-    font-size: 11px;
-}
-
-.grand-total {
-    font-size: 14px;
-    color: #003366;
+.product-table tfoot {
     font-weight: bold;
-    margin-top: 5px;
 }
 
-/* Opciones de pago y agradecimiento */
+.product-table tfoot td {
+    border-top: 2px solid #003366;
+}
+
+/* Totales, opciones de pago y agradecimiento */
 .payment-options, .thank-you {
     margin-bottom: 15px;
     font-size: 11px;
@@ -145,24 +154,6 @@ footer {
     padding-top: 10px;
 }
 
-/* Estilos para los botones de agregar y quitar */
-.add, .cut {
-    background: #9AF;
-    border-radius: 0.5em;
-    color: #FFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    text-shadow: 0 -1px 2px rgba(0,0,0,0.333);
-}
-
-.add { margin: 0 0 0 0.5em; }
-.cut { opacity: 0; position: absolute; top: 0; left: -1.5em; }
-tr:hover .cut { opacity: 1; }
-
 /* Estilos responsivos */
 @media (max-width: 600px) {
     .quotation-details {
@@ -172,6 +163,7 @@ tr:hover .cut { opacity: 1; }
     .client-info, .quotation-info {
         flex-basis: 100%;
         margin-bottom: 15px;
+        text-align: left;
     }
 
     .product-table {
