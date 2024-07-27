@@ -94,7 +94,9 @@ main {
     font-size: 11px;
 }
 
+
 /* Tabla de productos */
+
 .products-title {
     color: #003366;
     font-size: 16px;
@@ -124,7 +126,9 @@ main {
     background-color: #f9f9f9;
 }
 
-/* Totales */
+
+
+/* TOTALES */
 
 .product-table tfoot {
     font-weight: bold;
@@ -135,10 +139,13 @@ main {
     border-top: 3px solid #003366;
 }
 
-/* .product-table tfood .total-value {
-    font-color: #003366 !important; /* Color azul oscuro */
-/*    font-size: 14px
+ .total-value {
+   font-color: #003366 !important; /* Color azul oscuro */
+   font-size: 14px
 } 
+
+
+
 
 /* opciones de pago y agradecimiento */
 .payment-options, .thank-you {
