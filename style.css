@@ -135,6 +135,11 @@ main {
     border-top: 3px solid #003366;
 }
 
+.product-table tfood .total-value{
+    color: #003366
+    font-size: 14px
+}
+
 /* opciones de pago y agradecimiento */
 .payment-options, .thank-you {
     margin-bottom: 15px;
