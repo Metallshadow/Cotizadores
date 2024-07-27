@@ -126,6 +126,7 @@ main {
 
 .product-table tfoot {
     font-weight: bold;
+    text-align: right;
 }
 
 .product-table tfoot td {
