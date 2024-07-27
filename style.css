@@ -124,7 +124,7 @@ main {
     background-color: #f9f9f9;
 }
 
-/* Totales, */
+/* Totales */
 
 .product-table tfoot {
     font-weight: bold;
@@ -136,7 +136,7 @@ main {
 }
 
 .product-table tfood .total-value{
-    font-color: #003366 /* Color azul oscuro */
+    font-color: #003366 !important; /* Color azul oscuro */
     font-size: 14px
 }
 
