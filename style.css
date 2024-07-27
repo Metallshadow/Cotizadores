@@ -99,7 +99,7 @@ main {
     color: #003366;
     font-size: 16px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 .product-table {
@@ -124,16 +124,18 @@ main {
     background-color: #f9f9f9;
 }
 
+/* Totales, */
+
 .product-table tfoot {
     font-weight: bold;
     text-align: right;
 }
 
 .product-table tfoot td {
-    border-top: 2px solid #003366;
+    border-top: 3px solid #003366;
 }
 
-/* Totales, opciones de pago y agradecimiento */
+/* opciones de pago y agradecimiento */
 .payment-options, .thank-you {
     margin-bottom: 15px;
     font-size: 11px;
