@@ -128,7 +128,7 @@ main {
 
 .product-table tfoot {
     font-weight: bold;
-    text-align: right;
+    text-align: right !important;
 }
 
 .product-table tfoot td {
@@ -136,7 +136,7 @@ main {
 }
 
 .product-table tfood .total-value{
-    color: #003366
+    font-color: #003366 /* Color azul oscuro */
     font-size: 14px
 }
 
