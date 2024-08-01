@@ -104,28 +104,35 @@ main {
 
 .product-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+        margin-bottom: 20px;
 }
 
 .product-table th, .product-table td {
     border: 1px solid #ddd;
     text-align: left;
     font-size: 11px;
+    border: 1px solid #e0dada; /* Añadido un borde sólido para todas las celdas */
+    padding: 0.5em;
+    position: relative;
+    text-align: left;
+
 }
 
 .product-table th {
     background-color: #003366;
+    border-color: #bbb;
     text-align: center;
     height-alighn: center;
     padding: 5px;;
     color: white;
     white-space: nowrap;
-    
+    border-radius: 0.4em;
 }
 
 .product-table td {
-    padding: 1px;   
+    padding: 1px;
+    border-color: #BBB;
+    border-radius: 0.5em;
 }
 
 .product-table tr:nth-child(even) {
