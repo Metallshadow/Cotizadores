@@ -1,89 +1,123 @@
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
 		<meta charset="utf-8">
 		<title>COTIZACIÓN</title>
-	 	<link rel="stylesheet" href="https://metallshadow.github.io/Cotizadores/style.css">
+
+		<!-- <link rel="stylesheet" href="https://metallshadow.github.io/Cotizadores/style.css"> -->
+
+        <link rel="stylesheet" href="style.css"> <!-- borrar esta linea y descomentarear la de arriba-->
+
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 	</head>
-	<body>
-		<header>
-			<h1>COTIZACIÓN</h1>
-			<address>
-				<p>SUBLIME ULTIMATE</p>
-				<p>NIT 1111111111<br>Calle 11- 10-33</p>
-				<p>Medellin</p>
-			</address>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://acortar.link/DUPNEd" alt="Logo de la empresa">
+            </div>
+            <div class="company-info">
+                <h1>CONSULTEC GROUP</h1>
+                <p>RUT 1020758949</p>
+                <p>Cra 113c #142a-90, Bogotá</p>
+                <p>Teléfono: 3154227383;</p>
+                <p>Email: Comercial@consultecgroup.com.co;</p>
+            </div>
+        </header>
 
-<div style="float: right;">
-    <img alt="" src="https://acortar.link/DUPNEd" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
-</div>
+        <main>
+            <div class="quotation-details">
+                <div class="client-info">
+                    <h2>Cliente</h2>
+                    <p><strong>&lt;&lt;[Cliente].[Cliente]&gt;&gt;</strong></p>
+                    <p>&lt;&lt;[Dirección]&gt;&gt;</p>
+                    <p>&lt;&lt;[Ciudad]&gt;&gt;</p>
+                    <p>Teléfono: &lt;&lt;[Cliente].[TELEFONO]&gt;&gt;</p>
+                    <p>Email: &lt;&lt;[Cliente].[CORREO]&gt;&gt;</p>
+                </div>
 
 
-		</header>
-		<article>
-			<h1>Recipient</h1>
-			<address>
-				<p>&lt;&lt;[Cliente].[Cliente]&gt;&gt;<br>-</p>
-                <p class="small-text"><br>Email: &lt;&lt;[Cliente].[CORREO]&gt;&gt;</p>
-                <p class="small-text">Cel:&lt;&lt;[Cliente].[TELEFONO]&gt;&gt;</p>
-			</address>
-			<table class="meta">
-				<tr>
-					<th><span>Cotización #</span></th>
-					<td><span>&lt;&lt;[ID_Cotización]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Fecha</span></th>
-					<td><span>&lt;&lt;[Fecha]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[Identificación]&gt;&gt;</span></td>
-				</tr>
-			</table>
-			<table class="inventory">
-				<thead>
-					<tr>
-						<th><span>Producto</span></th>
-						<th><span>Descripcion</span></th>
-						<th><span>Valor ud</span></th>
-						<th><span>Cantidad</span></th>
-						<th><span>Subtotal</span></th>
-					</tr>
-				</thead>
-				<tbody>
-				<p><span>&lt;&lt;Start: SELECT(COTIZACION_DETALLE[IdDetalleCotizaion],[IdCotizacion]=[IdCotizacion]) &gt;&gt;</span></p>
-					<tr>
-						<td><a class="cut">-</a>&lt;&lt;[ProductoVenta]&gt;&gt;</td>
-						<td><span></span></td>
-				        <td><span>&lt;&lt;[VrUnitario]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[SubTotal]&gt;&gt;</span></td>
-					</tr>
-				<p><span>&lt;&lt; end &gt;&gt;</span></p>
-				</tbody>
-			</table>
-			<a class="add">+</a>
-			<table class="balance">
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[Total Producto]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Otros conceptos</span></th>
-					<td><span data-prefix="$"></span><span>0.00</span></td>
-				</tr>
-				<tr>
-					<th><span>Total a pagar</span></th>
-					<td><span>&lt;&lt;[Total Producto]&gt;&gt;</span></td>
-				</tr>
-			</table>
-		</article>
-		<aside>
-			<h1><span>Notas adicionales</span></h1>
-			<div>
-				<p>Pagos a la cuenta de ahorros bancolombia # </p>
-			</div>
-		</aside>
-	</body>
+                <div class="quotation-info">
+                <table class="meta">
+                    <h2>COTIZACIÓN</h2>
+                    <p></p>
+                    <tr>
+                        <th><span>Cotización #:</span></th>
+                        <td><span>&lt;&lt;[IdCotizacion]&gt;&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <th><span>Fecha:</span></th>
+                        <td><span>&lt;&lt;[Fecha]&gt;&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <th><span>Vencimiento:</span></th>
+                        <td><span>&lt;&lt;[FechaVencimiento]&gt;&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <th><span>ID Cliente:</span></th>
+                        <td><span>&lt;&lt;[Identificación]&gt;&gt;</span></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+
+            <h3 class="products-title">PRODUCTOS COTIZADOS</h3>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>CANTIDAD</th>
+                        <th>VR UNIT</th>
+                        <th>SUB TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <p><span>&lt;&lt;Start: SELECT(COTIZACION_DETALLE[IdDetalleCotizaion],[IdCotizacion]=[IdCotizacion]) &gt;&gt;</span></p>
+                    <tr>
+                        <td class="items">&lt;&lt;[IdDetalleCotizaion]&gt;&gt;</td>
+                        <td>&lt;&lt;[Descripción]&gt;&gt;</td>
+                        <td class="numeros-tabla">&lt;&lt;[Cantidad]&gt;&gt;</td>
+                        <td class="numeros-tabla">&lt;&lt;[VrUnitario]&gt;&gt;</td>
+                        <td class="numeros-tabla">&lt;&lt;[V_VrSubtotalDetalle]&gt;&gt;</td>
+                    </tr>
+                    <p><span>&lt;&lt; end &gt;&gt;</span></p>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">TOTAL PRODUCTOS:</td>
+                        <td>&lt;&lt;[V_TotalArticulos]&gt;&gt;</td>
+                    </tr>
+                     <tr>
+                        <td colspan="4">TOTAL BRUTO:</td>
+                        <td>&lt;&lt;[V_VrTotalBruto]&gt;&gt;</td>
+                      </tr>
+                    <tr>
+                        <td colspan="4">IVA 19%</td>
+                        <td>&lt;&lt;[V_VrIVA]&gt;&gt;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">VALOR TOTAL</td>
+                        <td>&lt;&lt;[V_VrTotalPagar]&gt;&gt;</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="payment-options">
+                <h3>Opciones de pago</h3>
+                <p>Pagos a la cuenta de ahorros Bancolombia #</p>
+            </div>
+
+            <div class="thank-you">
+                <h3>GRACIAS POR SU NEGOCIO</h3>
+                <p>Si tiene alguna pregunta sobre esta cotización, por favor contáctenos.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 SUBLIME ULTIMATE. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
 </html>
+
