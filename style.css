@@ -94,6 +94,42 @@ main {
     font-size: 11px;
 }
 
+/*
+  Tabla Info Contización 
+
+table.meta{
+    margin: 0 0 3em;
+    clear: both;
+    float: right;
+    width: 36%;
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+table.meta th {
+    width: 40%;
+    background-color: #003366;
+    border-color: #bbb;
+    text-align: left;
+    height: auto;
+    height-alighn: center;
+    padding: 1px;;
+    color: white;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table.meta td {
+    width: 60%;
+    text-align: left;
+    border-color: #BBB;
+}
+*/
+
+
 /* Tabla de productos */
 .products-title {
     color: #003366;
