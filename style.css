@@ -98,7 +98,7 @@ main {
 table.meta{
     margin: 0 0 3em;
     clear: both;
-    float: right !important;
+    float: right;
     width: 36%;
     content: "";
     display: table;
