@@ -96,12 +96,11 @@ main {
  /* Tabla Info Contización */
 
 table.meta{
-    margin: 0 0 3em;
     clear: both;
-    float: right !important;
+    float: right;
     width: 36%;
-    content: "";
     display: table;
+    white-space: nowrap;
 }
     
 table.meta th {
@@ -112,7 +111,6 @@ table.meta th {
     height: auto;
     padding: 1px;;
     color: white;
-   
     border-radius: 0.2em;
     padding-left: 5px;
     padding-right: 5px;
@@ -135,7 +133,7 @@ table.meta td {
 
 .product-table {
     width: 100%;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .product-table th, .product-table td {
