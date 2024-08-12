@@ -98,10 +98,8 @@ main {
  /* Tabla Info Contización */
 
 table.meta{
-    margin: 0 0 3em;
     clear: both;
     float: right !important;
-  
     content: "";
     display: table;
 }
