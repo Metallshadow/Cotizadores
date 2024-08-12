@@ -95,16 +95,13 @@ main {
 }
 
 
-  Tabla Info Contización 
+ /* Tabla Info Contización */
 
 table.meta{
-    margin: 0 0 3em;
     clear: both;
-    float: right;
-    width: 36%;
-    content: "";
     display: table;
-    clear: both;
+    float: right !important;
+    width: 36%;
 }
     
 table.meta th {
@@ -113,7 +110,6 @@ table.meta th {
     border-color: #bbb;
     text-align: left;
     height: auto;
-    height-alighn: center;
     padding: 1px;;
     color: white;
     white-space: nowrap;
@@ -123,9 +119,9 @@ table.meta th {
 }
 
 table.meta td {
-    width: 60%;
+    
     text-align: left;
-    border-color: #BBB;
+    border-color: #003366;
 }
 
 
