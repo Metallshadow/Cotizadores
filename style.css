@@ -99,8 +99,6 @@ main {
 
 table.meta{
     clear: both;
-    float: right !important;
-    content: "";
     display: table;
 }
     
@@ -121,7 +119,7 @@ table.meta th {
 table.meta td {
     
     text-align: left;
-    border-color: #BBB;
+    border-color: #003366;
 }
 
 
