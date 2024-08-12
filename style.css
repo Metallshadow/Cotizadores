@@ -100,7 +100,7 @@ main {
 table.meta{
     margin: 0 0 3em;
     clear: both;
-    float: right;
+    float: right !important;
   
     content: "";
     display: table;
