@@ -50,7 +50,6 @@ header {
 }
 
 .company-info p {
-    margin: 2px 0;
     font-size: 11px;
 }
 
@@ -126,7 +125,6 @@ table.meta td {
 }
 
 
-
 /* Tabla de productos */
 .products-title {
     color: #003366;
@@ -197,6 +195,7 @@ table.meta td {
 
 .product-table tfoot tr:first-child td {
     border-top: 2px solid #003366;  /* Añade una línea superior para separar los totales */
+    border-radius: 0.0em;
 }
 
 .valor-total {
@@ -249,3 +248,4 @@ footer {
         padding: 6px;
     }
 }
+
