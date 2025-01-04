@@ -8,15 +8,17 @@
 
 body {
 
-    background-image: url('https://raw.githubusercontent.com/Metallshadow/Cotizadores/refs/heads/main/Marca%20De%20Agua%20Con%20Logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  
     
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 1.4;
     color: #333;
+
+    background-image: url('https://raw.githubusercontent.com/Metallshadow/Cotizadores/refs/heads/main/Marca%20De%20Agua%20Con%20Logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
