@@ -162,7 +162,7 @@ table.meta td {
 .product-table td {
     padding: 1px;
     border-color: #BBB;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
 }
 
 .product-table tr:nth-child(even) {
